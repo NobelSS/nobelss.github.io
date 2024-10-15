@@ -10,7 +10,7 @@ export default function HomePage() {
             <div className="lg:w-1/3 mt-6 lg:mr-10">
               <img
                 className="rounded-md object-cover shadow-lg"
-                src="src/assets/profile.jpg"
+                src="src/assets/profile.JPG"
                 alt="Nobel Shan Setiono"
               />
               <button className="bg-gray-800 hover:bg-gray-500 text-white py-2 size-full rounded-full mt-5">
@@ -32,7 +32,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Work Experience Section */}
       <div className="bg-gray-100 py-16">
         <div className="max-w-4xl mx-auto px-8">
           <h2 className="text-4xl font-bold text-gray-900 text-center mb-10">
