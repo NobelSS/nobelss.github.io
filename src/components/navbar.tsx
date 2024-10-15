@@ -20,20 +20,20 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-1/2 transform -translate-x-1/2 transition-all duration-300 ease-in-out z-50 ${
         isScrolled
-          ? "bg-white py-3 mt-4 shadow-md rounded-full w-fit"
+          ? "bg-white py-2 mt-4 shadow-md rounded-full w-fit"
           : "bg-transparent py-6"
       }`}
     >
-      <div className="flex justify-center items-center px-10">
-        <div className="flex space-x-8">
-          <a href="#about" className="text-gray-700 font-medium hover:text-blue-600">
+      <div className="flex justify-center items-center px-3">
+        <div className="flex space-x-3">
+          <a className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full">
             About Me
           </a>
-          <a href="#projects" className="text-gray-700 font-medium hover:text-blue-600">
+          <a className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full">
             Projects
           </a>
-          <a href="#contact" className="text-gray-700 font-medium hover:text-blue-600">
-            Experience
+          <a className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full">
+            Certificate
           </a>
         </div>
       </div>
