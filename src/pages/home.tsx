@@ -76,7 +76,7 @@ export default function HomePage() {
           </p>
           <div className="space-y-4">
             <p className="text-gray-600">
-              <strong>Email:</strong> <a href="mailto:your.email@example.com" className="text-indigo-500 hover:underline">nobelshans@gmail.com</a>
+              <strong>Email:</strong> nobelshans@gmail.com
             </p>
             <p className="text-gray-600">
               <strong>Phone:</strong> +62 897-747-3913
