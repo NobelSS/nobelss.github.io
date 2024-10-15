@@ -10,7 +10,7 @@ export default function HomePage() {
             <div className="lg:w-1/3 mt-6 lg:mr-10">
               <img
                 className="rounded-md object-cover shadow-lg"
-                src="./public/profile.jpg"
+                src="https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/profile.jpg"
                 alt="Nobel Shan Setiono"
               />
               <button className="bg-gray-800 hover:bg-gray-500 text-white py-2 size-full rounded-full mt-5">
