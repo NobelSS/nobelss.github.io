@@ -11,22 +11,68 @@ export default function ProjectPage() {
     visible: { opacity: 1, y: 0 },
   };
 
+  const imgs = ["1.jpg", "2.jpg", "3.jpg"] //, "4.jpg", "5.jpg"
+
   const projects = [
     {
-      title: "Project 1",
+      title: "Bing Bing",
       description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      technologies: [
+        "React",
+        "TypeScript",
+        "Motoko",
+        "VITON-HD",
+        "Flask",
+        "Python",
+      ],
+      src: "projects/BingBing/",
       images: [imageSrc, imageSrc, imageSrc, imageSrc, imageSrc],
-      githubLink: "#",
+      githubLink: "https://github.com/CharlieLf/Bingbing",
     },
     {
-      title: "Project 2",
+      title: "Artemis",
       description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
-      technologies: ["Python", "Flask", "PostgreSQL"],
-      images: [imageSrc, imageSrc, imageSrc, imageSrc, imageSrc],
-      githubLink: "#",
+      technologies: [
+        "React",
+        "TypeScript",
+        "MySQL",
+        "Nest",
+        "Microsoft Graph API",
+      ],
+      src: "projects/Artemis/",
+      githubLink: "https://github.com/jovitawaisakhi/Artemis",
+    },
+    {
+      title: "DHCS",
+      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
+      technologies: ["Unity", "C#"],
+      src: "projects/DHCS/",
+      githubLink: "https://github.com/NobelSS/DHCS",
+    },
+    {
+      title: "Gesture Mind",
+      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
+      technologies: ["React", "Tensorflow", "MediaPipe"],
+      src: "projects/Gesture_Mind/",
+      githubLink: "https://github.com/robert-wl/AIGestureMind",
+    },
+    {
+      title: "Hand Sign Recognizer Trainer and Detector",
+      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
+      technologies: [
+        "Svelte",
+        "Rust",
+        "Tauri",
+        "Python",
+        "Scikit-learn",
+        "MediaPipe",
+      ],
+      src: "projects/Hand_Sign_Recognizer_Trainer_and_Detector/",
+      githubLink: "https://github.com/robert-wl/AIGestureMind",
     },
   ];
+
+  
 
   return (
     <div>
@@ -49,7 +95,7 @@ export default function ProjectPage() {
                 key={index}
                 className={`flex flex-col lg:flex-row items-center ${
                   index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                } bg-white gap-6 shadow-md rounded-lg p-6`}
+                } bg-white hover:bg-gray-50 transition-colors gap-6 shadow-md rounded-lg p-6`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -58,16 +104,16 @@ export default function ProjectPage() {
               >
                 <div className="lg:w-1/2">
                   <img
-                    className="rounded-md object-cover shadow-lg w-full mb-4"
-                    src={project.images[0]}
+                    className="rounded-md object-cover shadow-lg w-full h-full mb-4"
+                    src={project.src + imgs[0]}
                     alt={`Main Image of ${project.title}`}
                   />
-                  <div className="grid grid-cols-5 gap-2">
-                    {project.images.map((image, imgIndex) => (
+                  <div className="grid grid-cols-3 gap-2">
+                    {imgs.map((image, imgIndex) => (
                       <img
                         key={imgIndex}
-                        className="rounded-md object-cover shadow-lg w-full"
-                        src={image}
+                        className="rounded-md object-cover shadow-lg w-full h-full"
+                        src={project.src + image}
                         alt={`Project ${index + 1} Image ${imgIndex + 1}`}
                       />
                     ))}

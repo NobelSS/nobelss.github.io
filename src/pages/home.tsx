@@ -8,6 +8,23 @@ export default function HomePage() {
     visible: { opacity: 1, y: 0 },
   };
 
+  const experiences = [
+    {
+      position: "Junior Laboratory Assistant - BINUS University",
+      period: "February 2023 - Present",
+      description: `
+      I successfully passed the selection processes, which included an aptitude test, programming assessments, interviews, and training, to earn the position of Software Laboratory Assistant for Generation 23-1.
+      <br /><br />
+      During my time as a Junior Laboratory Assistant, I completed a mandatory development program called Test Progressive Assistant (TPA), which includes subjects such as Game Programming, Business Analysis and Desktop Application Development, Web Design and Programming, Mobile Application Development, and Networking. I also created an internal web scheduler with automatic email invitations for my Research Interest Group (RIG).`,
+    },
+    {
+      position: "Activist - Bina Nusantara Computer Club",
+      period: "November 2022 - November 2023",
+      description: `
+      During my time as an activist, I participated in various activities aimed at enhancing my soft skills. Among these experiences, I served as a Publication and Registration Staff member for BNCC Techno Talk I, where I helped facilitate the event and engage with participants. Additionally, I took part in the Project Apprentice Program, which further contributed to my growth and development in leadership and teamwork.`,
+    },
+  ];
+
   return (
     <div>
       <Navbar />
@@ -38,9 +55,12 @@ export default function HomePage() {
                   Nobel Shan Setiono
                 </h1>
                 <p className="text-gray-500 text-lg mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                  delectus tempore at nesciunt quisquam autem, incidunt nulla
-                  porro perferendis quae, ut nam illum enim.
+                  an undergraduate computer science student at BINUS University,
+                  passionate about software engineering, artificial
+                  intelligence, and data analytics. I enjoy the journey of
+                  continuous learning and growth in these fields, as well as
+                  utilizing my skills to solve problems and make a meaningful
+                  impact
                 </p>
               </div>
             </div>
@@ -60,30 +80,17 @@ export default function HomePage() {
               Work Experience
             </h2>
             <div className="space-y-8">
-              <div className="bg-white shadow-md rounded-lg p-6">
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Junior Laboratory Assistant - BINUS University
-                </h3>
-                <p className="text-gray-600">
-                  <strong>February 2023 - Present</strong>
-                </p>
-                <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="bg-white shadow-md rounded-lg p-6">
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Activist - Bina Nusantara Computer Club
-                </h3>
-                <p className="text-gray-600">
-                  <strong>November 2022 - November 2023</strong>
-                </p>
-                <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
+              {experiences.map((exp, index) => (
+                <div key={index} className="bg-white shadow-md rounded-lg p-6 hover:bg-gray-50 transition-colors">
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {exp.position}
+                  </h3>
+                  <p className="text-gray-600">
+                    <strong>{exp.period}</strong>
+                  </p>
+                  <p className="text-gray-600 mt-2" dangerouslySetInnerHTML={{ __html: exp.description }} />
+                </div>
+              ))}
             </div>
           </div>
         </motion.div>

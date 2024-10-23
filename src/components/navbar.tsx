@@ -29,19 +29,19 @@ export default function Navbar() {
         <div className="flex space-x-3">
           <Link
             to="/"
-            className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full"
+            className="text-gray-700 font-medium hover:bg-gray-200 px-3 py-1 rounded-full transition-colors"
           >
             About Me
           </Link>
           <Link
             to="/projects"
-            className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full"
+            className="text-gray-700 font-medium hover:bg-gray-200 px-3 py-1 rounded-full transition-colors"
           >
             Projects
           </Link>
           <Link
             to="/certificates"
-            className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full"
+            className="text-gray-700 font-medium hover:bg-gray-200 px-3 py-1 rounded-full transition-colors"
           >
             Certificates
           </Link>

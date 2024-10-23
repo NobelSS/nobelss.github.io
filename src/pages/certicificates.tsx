@@ -2,46 +2,34 @@ import { motion } from "framer-motion";
 import Navbar from "../components/navbar";
 import SocialIcons from "../components/social_icons";
 
-const certificates = [
-  {
-    id: 1,
-    title: "Certificate 1",
-    description: `
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repellat amet nobis nam ab exercitationem vitae, saepe natus molestiae excepturi ad veniam obcaecati veritatis fuga aliquam voluptate, quae, fugiat ipsa!`,
-    image:
-      "/certificates/Nobel_Hackaton.png",
-  },
-  {
-    id: 2,
-    title: "Certificate 2",
-    description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, enim beatae? Dignissimos, nesciunt delectus cum tenetur iusto ratione nemo odit maiores laudantium incidunt eius nam aperiam libero quas reprehenderit laboriosam.`,
-    image:
-      "certificates/Nobel Shan Setiono_Peserta_DSC.png",
-  },
-  {
-    id: 3,
-    title: "Certificate 3",
-    description: `
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quam ut quas eum voluptas assumenda, dolore maxime ducimus hic iusto cum in a, aliquam, animi id! Ad ut vitae quo.`,
-    image:
-      "certificates/CognitiveClass_MachineLearningWithPython_Nobel.png",
-  },
-  {
-    id: 4,
-    title: "Certificate 4",
-    description: `
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione suscipit aliquam dicta, porro quos minima asperiores earum fuga. Iste ex eius, quaerat nihil voluptate magni dignissimos ea repellat fugiat voluptatum.`,
-    image:
-      "certificates/CognitiveClass_PythonForDataScience_Nobel.png",
-  },
-];
-
 export default function CertificatePage() {
   const fadeIn = {
     hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const certificates = [
+    {
+      title: "Hackaton 5.0, 2nd Place Winner",
+      description: `Organized by Codefest and sponsored by the DFinity Foundation, we won 2nd place at Hackathon 5.0 with BingBing. BingBing is a decentralized digital fashion store featuring a virtual try-on option, providing users with a secure and interactive shopping experience.`,
+      image: "/certificates/Nobel_Hackaton.png",
+    },
+    {
+      title: "Participant in the GammaFest IPB Data Science Competition",
+      description: `Organized by Bogor Agricultural University, we developed a model to extract vote percentages from ballot paper images using OpenCV for image processing and a custom DCNN for the count recognition. We achieved 98% accuracy on the test dataset, reaching 27th place on the leaderboard with a 4.1353 MAPE score.`,
+      image: "certificates/Nobel Shan Setiono_Peserta_DSC.png",
+    },
+    {
+      title: "Machine Learning With Python",
+      description: `Completed a course on the fundamentals of machine learning using Python, focusing on both supervised and unsupervised learning. Learning more in-depth about statistical modeling, popular algorithms like classification, regression, and clustering, as well as model evaluation techniques.`,
+      image: "certificates/CognitiveClass_MachineLearningWithPython_Nobel.png",
+    },
+    {
+      title: "Python For Data Science",
+      description: `Completed a course on basic Python programming, data manipulation and numerical analysis.`,
+      image: "certificates/CognitiveClass_PythonForDataScience_Nobel.png",
+    },
+  ];
 
   return (
     <div>
@@ -61,10 +49,10 @@ export default function CertificatePage() {
           <div className="space-y-8">
             {certificates.map((cert, index) => (
               <motion.div
-                key={cert.id}
+                key={index}
                 className={`flex flex-col lg:flex-row items-center ${
                   index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                } bg-white shadow-md rounded-lg p-6 gap-6`}
+                } bg-white hover:bg-gray-50 shadow-md rounded-lg p-6 gap-6 transition-colors`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
