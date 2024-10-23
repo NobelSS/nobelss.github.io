@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import Technologies from "../components/technologies";
 import SocialIcons from "../components/social_icons";
 
-const imageSrc = "/placeholder.jpg";
-
 export default function ProjectPage() {
   const fadeIn = {
     hidden: { opacity: 0, y: -50 },
@@ -16,7 +14,7 @@ export default function ProjectPage() {
   const projects = [
     {
       title: "Bing Bing",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
+      description: `An innovative fashion e-commerce platform that uses Web3 technology and Internet Computer Protocol (ICP) to enhance the online shopping experience. In Bing Bing, users are able to upload their image to the platform, where an advanced virtual try-on technology overlays the selected fashion items onto the uploaded photos, allowing them to see how the items would look on them before making a purchase. `,
       technologies: [
         "React",
         "TypeScript",
@@ -26,12 +24,11 @@ export default function ProjectPage() {
         "Python",
       ],
       src: "projects/BingBing/",
-      images: [imageSrc, imageSrc, imageSrc, imageSrc, imageSrc],
       githubLink: "https://github.com/CharlieLf/Bingbing",
     },
     {
       title: "Artemis",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
+      description: `A web-based application used by SLC to schedule and book internal events, featuring automated email invitation blasting to help officers schedule meetings more easily.`,
       technologies: [
         "React",
         "TypeScript",
@@ -44,21 +41,14 @@ export default function ProjectPage() {
     },
     {
       title: "DHCS",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
+      description: `A 2D side-scrolling game about a young office worker named Theodore. One day, an earthquake strikes his office, and now he must use his wits and clever thinking to escape safely.`,
       technologies: ["Unity", "C#"],
       src: "projects/DHCS/",
       githubLink: "https://github.com/NobelSS/DHCS",
     },
     {
-      title: "Gesture Mind",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
-      technologies: ["React", "Tensorflow", "MediaPipe"],
-      src: "projects/Gesture_Mind/",
-      githubLink: "https://github.com/robert-wl/AIGestureMind",
-    },
-    {
       title: "Hand Sign Recognizer Trainer and Detector",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis minima recusandae at suscipit, sit quia accusamus dolorum quae molestias eligendi, repellendus officia mollitia? Nesciunt dolorem eum vitae dignissimos veniam voluptatum.`,
+      description: `A desktop application that can be used to train and detect hand signs. User can input different hand sign images and choose the model of their choice to train the model.`,
       technologies: [
         "Svelte",
         "Rust",
@@ -70,6 +60,14 @@ export default function ProjectPage() {
       src: "projects/Hand_Sign_Recognizer_Trainer_and_Detector/",
       githubLink: "https://github.com/robert-wl/AIGestureMind",
     },
+    {
+      title: "Gesture Mind",
+      description: `An AI web-based application that lets people learn about Hand Sign Gesture. Users can use their camera to learn about the letters of the alphabet in American Sign Language.`,
+      technologies: ["React", "Tensorflow", "MediaPipe"],
+      src: "projects/Gesture_Mind/",
+      githubLink: "https://github.com/robert-wl/AIGestureMind",
+    },
+    
   ];
 
   
