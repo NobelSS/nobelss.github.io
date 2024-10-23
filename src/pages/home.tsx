@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/navbar";
+import SocialIcons from "../components/social_icons";
 
 export default function HomePage() {
   const fadeIn = {
@@ -10,6 +11,7 @@ export default function HomePage() {
   return (
     <div>
       <Navbar />
+      <SocialIcons />
       <div>
         <motion.div
           className="flex items-center justify-center h-screen bg-white"

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,17 +25,26 @@ export default function Navbar() {
           : "bg-transparent py-6"
       }`}
     >
-      <div className="flex justify-center items-center px-3">
+      <div className="flex justify-between items-center px-6 w-full">
         <div className="flex space-x-3">
-          <a className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full">
+          <Link
+            to="/"
+            className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full"
+          >
             About Me
-          </a>
-          <a className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full">
+          </Link>
+          <Link
+            to="/projects"
+            className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full"
+          >
             Projects
-          </a>
-          <a className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full">
-            Certificate
-          </a>
+          </Link>
+          <Link
+            to="/certificates"
+            className="text-gray-700 font-medium hover:bg-gray-300 px-3 py-1 rounded-full"
+          >
+            Certificates
+          </Link>
         </div>
       </div>
     </nav>

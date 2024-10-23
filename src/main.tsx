@@ -4,6 +4,7 @@ import './index.css'
 import HomePage from './pages/home.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProjectPage from './pages/projects.tsx'
+import CertificatePage from './pages/certicificates.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,8 +15,12 @@ createRoot(document.getElementById('root')!).render(
             element={<HomePage />}
           />
           <Route 
-            path="/project"
+            path="/projects"
             element={<ProjectPage />}
+          />
+          <Route 
+            path="/certificates"
+            element={<CertificatePage />}
           />
         </Routes>
     </BrowserRouter>
