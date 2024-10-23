@@ -3,18 +3,38 @@ import Navbar from "../components/navbar";
 import SocialIcons from "../components/social_icons";
 
 const certificates = [
-  { id: 1, title: "Certificate 1", description: `
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repellat amet nobis nam ab exercitationem vitae, saepe natus molestiae excepturi ad veniam obcaecati veritatis fuga aliquam voluptate, quae, fugiat ipsa!
-    ` },
-  { id: 2, title: "Certificate 2", description: `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, enim beatae? Dignissimos, nesciunt delectus cum tenetur iusto ratione nemo odit maiores laudantium incidunt eius nam aperiam libero quas reprehenderit laboriosam.
-    `},
-  { id: 3, title: "Certificate 3", description: `
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quam ut quas eum voluptas assumenda, dolore maxime ducimus hic iusto cum in a, aliquam, animi id! Ad ut vitae quo.
-    `},
-  { id: 4, title: "Certificate 4", description: `
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione suscipit aliquam dicta, porro quos minima asperiores earum fuga. Iste ex eius, quaerat nihil voluptate magni dignissimos ea repellat fugiat voluptatum.
-    `},
+  {
+    id: 1,
+    title: "Certificate 1",
+    description: `
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repellat amet nobis nam ab exercitationem vitae, saepe natus molestiae excepturi ad veniam obcaecati veritatis fuga aliquam voluptate, quae, fugiat ipsa!`,
+    image:
+      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+  },
+  {
+    id: 2,
+    title: "Certificate 2",
+    description: `
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, enim beatae? Dignissimos, nesciunt delectus cum tenetur iusto ratione nemo odit maiores laudantium incidunt eius nam aperiam libero quas reprehenderit laboriosam.`,
+    image:
+      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+  },
+  {
+    id: 3,
+    title: "Certificate 3",
+    description: `
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quam ut quas eum voluptas assumenda, dolore maxime ducimus hic iusto cum in a, aliquam, animi id! Ad ut vitae quo.`,
+    image:
+      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+  },
+  {
+    id: 4,
+    title: "Certificate 4",
+    description: `
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione suscipit aliquam dicta, porro quos minima asperiores earum fuga. Iste ex eius, quaerat nihil voluptate magni dignissimos ea repellat fugiat voluptatum.`,
+    image:
+      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+  },
 ];
 
 export default function CertificatePage() {
@@ -35,7 +55,9 @@ export default function CertificatePage() {
           variants={fadeIn}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-10">Certificates</h2>
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-10">
+            Certificates
+          </h2>
           <div className="space-y-8">
             {certificates.map((cert, index) => (
               <motion.div
@@ -52,7 +74,7 @@ export default function CertificatePage() {
                 <div className="lg:w-1/2">
                   <img
                     className="rounded-md object-cover shadow-lg w-full"
-                    src={`src/assets/placeholder.jpg`}
+                    src={`https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg`}
                     alt={cert.title}
                   />
                 </div>
@@ -61,14 +83,15 @@ export default function CertificatePage() {
                     index % 2 === 0 ? "lg:ml-6 text-right" : "lg:mr-6 text-left"
                   }`}
                 >
-                  <h3 className="text-2xl font-bold text-gray-900">{cert.title}</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {cert.title}
+                  </h3>
                   <p className="text-gray-600 mt-2">{cert.description}</p>
                 </div>
               </motion.div>
             ))}
           </div>
         </motion.div>
-        
       </div>
     </div>
   );
