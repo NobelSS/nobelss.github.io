@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Technologies from "../components/technologies";
 import SocialIcons from "../components/social_icons";
 
-const imageSrc = "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg";
+const imageSrc = "/placeholder.jpg";
 
 export default function ProjectPage() {
   const fadeIn = {

@@ -9,7 +9,7 @@ const certificates = [
     description: `
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repellat amet nobis nam ab exercitationem vitae, saepe natus molestiae excepturi ad veniam obcaecati veritatis fuga aliquam voluptate, quae, fugiat ipsa!`,
     image:
-      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+      "/placeholder.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const certificates = [
     description: `
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, enim beatae? Dignissimos, nesciunt delectus cum tenetur iusto ratione nemo odit maiores laudantium incidunt eius nam aperiam libero quas reprehenderit laboriosam.`,
     image:
-      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+      "/placeholder.jpg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const certificates = [
     description: `
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quam ut quas eum voluptas assumenda, dolore maxime ducimus hic iusto cum in a, aliquam, animi id! Ad ut vitae quo.`,
     image:
-      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+      "/placeholder.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const certificates = [
     description: `
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione suscipit aliquam dicta, porro quos minima asperiores earum fuga. Iste ex eius, quaerat nihil voluptate magni dignissimos ea repellat fugiat voluptatum.`,
     image:
-      "https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg",
+      "/placeholder.jpg",
   },
 ];
 
