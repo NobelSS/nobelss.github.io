@@ -9,7 +9,7 @@ const certificates = [
     description: `
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repellat amet nobis nam ab exercitationem vitae, saepe natus molestiae excepturi ad veniam obcaecati veritatis fuga aliquam voluptate, quae, fugiat ipsa!`,
     image:
-      "/placeholder.jpg",
+      "/certificates/Nobel_Hackaton.png",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const certificates = [
     description: `
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, enim beatae? Dignissimos, nesciunt delectus cum tenetur iusto ratione nemo odit maiores laudantium incidunt eius nam aperiam libero quas reprehenderit laboriosam.`,
     image:
-      "/placeholder.jpg",
+      "certificates/Nobel Shan Setiono_Peserta_DSC.png",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const certificates = [
     description: `
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quam ut quas eum voluptas assumenda, dolore maxime ducimus hic iusto cum in a, aliquam, animi id! Ad ut vitae quo.`,
     image:
-      "/placeholder.jpg",
+      "certificates/CognitiveClass_MachineLearningWithPython_Nobel.png",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const certificates = [
     description: `
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione suscipit aliquam dicta, porro quos minima asperiores earum fuga. Iste ex eius, quaerat nihil voluptate magni dignissimos ea repellat fugiat voluptatum.`,
     image:
-      "/placeholder.jpg",
+      "certificates/CognitiveClass_PythonForDataScience_Nobel.png",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function CertificatePage() {
                 <div className="lg:w-1/2">
                   <img
                     className="rounded-md object-cover shadow-lg w-full"
-                    src={`https://raw.githubusercontent.com/NobelSS/nobelss.github.io/refs/heads/main/src/assets/placeholder.jpg`}
+                    src={cert.image}
                     alt={cert.title}
                   />
                 </div>
