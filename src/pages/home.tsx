@@ -23,6 +23,12 @@ export default function HomePage() {
       description: `
       During my time as an activist, I participated in various activities aimed at enhancing my soft skills. Among these experiences, I served as a Publication and Registration Staff member for BNCC Techno Talk I, where I helped facilitate the event and engage with participants. Additionally, I took part in the Project Apprentice Program, which further contributed to my growth and development in leadership and teamwork.`,
     },
+    {
+      position: "Member - Bina Nusantara Computer Club",
+      period: "September 2022 - September 2023",
+      description: `
+      As a member of Bina Nusantara Computer Club I participated in the Learning and Training (LnT) online course on Back-End Development using the Laravel Framework.`,
+    },
   ];
 
   return (
