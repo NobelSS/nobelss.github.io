@@ -51,7 +51,7 @@ export default function HomePage() {
                   src="/profile.jpg"
                   alt="Nobel Shan Setiono"
                 />
-                <a href="/CV_Nobel Shan Setiono.pdf">
+                <a href="/CV_Nobel Shan Setiono.pdf" target="_blank">
                   <button className="bg-gray-800 hover:bg-gray-500 text-white py-2 size-full rounded-full mt-5">
                     Download CV
                   </button>
