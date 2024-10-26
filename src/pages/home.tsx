@@ -51,9 +51,11 @@ export default function HomePage() {
                   src="/profile.jpg"
                   alt="Nobel Shan Setiono"
                 />
-                <button className="bg-gray-800 hover:bg-gray-500 text-white py-2 size-full rounded-full mt-5">
-                  Download CV
-                </button>
+                <a href="/CV_Nobel Shan Setiono.pdf">
+                  <button className="bg-gray-800 hover:bg-gray-500 text-white py-2 size-full rounded-full mt-5">
+                    Download CV
+                  </button>
+                </a>
               </div>
               <div className="lg:w-2/3 text-center lg:text-left">
                 <p className="text-gray-500 text-2xl">Hello, I'm</p>
@@ -62,8 +64,8 @@ export default function HomePage() {
                 </h1>
                 <p className="text-gray-500 text-lg mb-3">
                   an undergraduate computer science student at BINUS University,
-                  passionate about software engineering, artificial
-                  intelligence, and data analytics. I enjoy the journey of
+                  passionate about artificial intelligence, software
+                  engineering, and data analytics. I enjoy the journey of
                   continuous learning and growth in these fields, as well as
                   utilizing my skills to solve problems and make a meaningful
                   impact
@@ -83,18 +85,24 @@ export default function HomePage() {
         >
           <div className="max-w-4xl mx-auto px-8">
             <h2 className="text-4xl font-bold text-gray-900 text-center mb-10">
-              Work Experience
+              Experience
             </h2>
             <div className="space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="bg-white shadow-md rounded-lg p-6 hover:bg-gray-50 transition-colors">
+                <div
+                  key={index}
+                  className="bg-white shadow-md rounded-lg p-6 hover:bg-gray-50 transition-colors"
+                >
                   <h3 className="text-2xl font-bold text-gray-900">
                     {exp.position}
                   </h3>
                   <p className="text-gray-600">
                     <strong>{exp.period}</strong>
                   </p>
-                  <p className="text-gray-600 mt-2" dangerouslySetInnerHTML={{ __html: exp.description }} />
+                  <p
+                    className="text-gray-600 mt-2"
+                    dangerouslySetInnerHTML={{ __html: exp.description }}
+                  />
                 </div>
               ))}
             </div>
