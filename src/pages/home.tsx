@@ -37,27 +37,27 @@ export default function HomePage() {
       <SocialIcons />
       <div>
         <motion.div
-          className="flex items-center justify-center h-screen bg-white"
+          className="flex flex-col items-center justify-center min-h-screen bg-white px-4"
           initial="hidden"
           animate="visible"
           variants={fadeIn}
           transition={{ duration: 0.8 }}
         >
           <div className="max-w-4xl mx-auto p-8">
-            <div className="flex flex-col lg:flex-row items-center gap">
-              <div className="lg:w-1/3 mt-6 lg:mr-10">
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <div className="w-full lg:w-1/3 mt-6 lg:mr-10">
                 <img
-                  className="rounded-md object-cover shadow-lg"
+                  className="rounded-md object-cover shadow-lg w-full"
                   src="/profile.jpg"
                   alt="Nobel Shan Setiono"
                 />
                 <a href="/CV_Nobel Shan Setiono.pdf" target="_blank">
-                  <button className="bg-gray-800 hover:bg-gray-500 text-white py-2 size-full rounded-full mt-5">
+                  <button className="bg-gray-800 hover:bg-gray-500 text-white py-2 w-full rounded-full mt-5">
                     Download CV
                   </button>
                 </a>
               </div>
-              <div className="lg:w-2/3 text-center lg:text-left">
+              <div className="w-full lg:w-2/3 text-center lg:text-left">
                 <p className="text-gray-500 text-2xl">Hello, I'm</p>
                 <h1 className="text-5xl font-bold text-gray-900 mb-3">
                   Nobel Shan Setiono
@@ -68,7 +68,7 @@ export default function HomePage() {
                   engineering, and data analytics. I enjoy the journey of
                   continuous learning and growth in these fields, as well as
                   utilizing my skills to solve problems and make a meaningful
-                  impact
+                  impact.
                 </p>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function HomePage() {
           variants={fadeIn}
           transition={{ duration: 0.8 }}
         >
-          <div className="max-w-4xl mx-auto px-8">
+          <div className="max-w-4xl mx-auto px-4 lg:px-8">
             <h2 className="text-4xl font-bold text-gray-900 text-center mb-10">
               Experience
             </h2>
@@ -110,7 +110,7 @@ export default function HomePage() {
         </motion.div>
 
         <div className="bg-white py-16">
-          <div className="max-w-4xl mx-auto px-8 text-center">
+          <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Let's Get In Touch
             </h2>
