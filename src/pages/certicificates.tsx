@@ -10,6 +10,11 @@ export default function CertificatePage() {
 
   const certificates = [
     {
+      title: "Cloud Technical Series: ADK Builder's Badge",
+      description: `Participated in the Google Cloud Technical Series, gaining hands-on experience with Google Cloud Platform (GCP). Focused on cloud architecture best practices, infrastructure design, and building scalable cloud-native applications using modern development tools.`,
+      image: "/certificates/Nobel_CloudTechnicalSeriesBadge.png",
+    },
+    {
       title: "Hackaton 5.0, 2nd Place Winner",
       description: `Organized by Codefest and sponsored by the DFinity Foundation, we won 2nd place at Hackathon 5.0 with BingBing. BingBing is a decentralized digital fashion store featuring a virtual try-on option, providing users with a secure and interactive shopping experience.`,
       image: "/certificates/Nobel_Hackaton.png",
@@ -59,12 +64,14 @@ export default function CertificatePage() {
                 variants={fadeIn}
                 transition={{ duration: 0.8 }}
               >
-                <div className="lg:w-1/2">
+                <div className="lg:w-1/2 w-full flex justify-center">
+                  {/* --- FIX START: Changed object-cover to object-contain and added h-64 --- */}
                   <img
-                    className="rounded-md object-cover shadow-lg w-full"
+                    className="rounded-md object-contain shadow-sm w-full h-64"
                     src={cert.image}
                     alt={cert.title}
                   />
+                  {/* --- FIX END --- */}
                 </div>
                 <div
                   className={`lg:w-1/2 mt-6 lg:mt-0 ${
