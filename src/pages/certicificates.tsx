@@ -65,13 +65,11 @@ export default function CertificatePage() {
                 transition={{ duration: 0.8 }}
               >
                 <div className="lg:w-1/2 w-full flex justify-center">
-                  {/* --- FIX START: Changed object-cover to object-contain and added h-64 --- */}
                   <img
                     className="rounded-md object-contain shadow-sm w-full h-64"
                     src={cert.image}
                     alt={cert.title}
                   />
-                  {/* --- FIX END --- */}
                 </div>
                 <div
                   className={`lg:w-1/2 mt-6 lg:mt-0 ${
