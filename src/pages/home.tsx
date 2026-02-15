@@ -10,8 +10,16 @@ export default function HomePage() {
 
   const experiences = [
     {
+      position: "Software Engineer Intern (AI / Full-Stack) - Moladin",
+      period: "March 2025 - March 2026",
+      description: `
+      Engineered a document intelligence pipeline that reduced manual processing time by ~70% and developed an automated report generation module for car appraisals. 
+      <br /><br />
+      I also built a property analysis engine using Vector Search and AI Agents to automate environmental risk research. Beyond that, I led R&D on AI agents and general agentic workflows to streamline system interactions and solve complex enterprise problems.`,
+    },
+    {
       position: "Junior Laboratory Assistant - BINUS University",
-      period: "February 2023 - Present",
+      period: "February 2023 - February 2025",
       description: `
       I successfully passed the selection processes, which included an aptitude test, programming assessments, interviews, and training, to earn the position of Software Laboratory Assistant for Generation 23-1.
       <br /><br />
