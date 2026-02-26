@@ -68,12 +68,18 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <h3 className="text-2xl font-bold text-gray-800">{project.title}</h3>
         <p className="text-gray-600 mt-2">{project.description}</p>
         <Technologies techList={project.technologies} />
-        <a
-          href={project.githubLink}
-          className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md shadow-md mt-4 hover:bg-blue-700"
-        >
-          View on GitHub
-        </a>
+        {project.githubLink ? (
+          <a
+            href={project.githubLink}
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md shadow-md mt-4 hover:bg-blue-700"
+          >
+            View on GitHub
+          </a>
+        ) : (
+          <span className="inline-block bg-gray-300 text-gray-500 px-4 py-2 rounded-md shadow-md mt-4 cursor-not-allowed select-none">
+            Private / Internal Project
+          </span>
+        )}
       </div>
     </motion.div>
   );

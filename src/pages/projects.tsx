@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import { motion } from "framer-motion";
 import SocialIcons from "../components/social_icons";
 import ProjectCard from "../components/project_card";
+import { text } from "framer-motion/client";
 
 export default function ProjectPage() {
   const fadeIn = {
@@ -10,6 +11,24 @@ export default function ProjectPage() {
   };
 
   const projects = [
+    {
+      title: "Mofi Property App",
+      description: `
+      An advanced geospatial analytics platform for real estate that combines location intelligence with Agentic AI. The application enables users to perform precise geospatial property searches and neighborhood analytics using an interactive Leaflet interface. It leverages Gemini and ADK Agents to autonomously research environmental conditions, infrastructure, and local amenities for any given address, ultimately generating a comprehensive, automated report.
+      `,
+      technologies: [
+        "ADK Agent",
+        "Gemini",
+        "Python",
+        "Fast API",
+        "React",
+        "TypeScript",
+        "Leaflet",
+        "PostgreSQL",
+      ],
+      src: "projects/Mofi_Property_App/",
+      githubLink: "",
+    },
     {
       title: "Bing Bing",
       description: `An innovative fashion e-commerce platform that uses Web3 technology and Internet Computer Protocol (ICP) to enhance the online shopping experience. In Bing Bing, users are able to upload their image to the platform, where an advanced virtual try-on technology overlays the selected fashion items onto the uploaded photos, allowing them to see how the items would look on them before making a purchase. `,
@@ -35,7 +54,23 @@ export default function ProjectPage() {
         "Microsoft Graph API",
       ],
       src: "projects/Artemis/",
-      githubLink: "https://github.com/jovitawaisakhi/Artemis",
+      githubLink: "",
+    },
+    {
+      title: "Structure LO Sync",
+      description: `
+      A specialized document automation tool designed to transform unstructured Legal Opinion (LO) PDFs into standardized, editable reports. The application utilizes PDF Plumber to extract complex legal text and structural data, converting it into a structured JSON schema. This data is then programmatically injected into Google Docs templates, allowing legal professionals to generate ready-to-use, formatted documents instantly from raw data.
+      `,
+      technologies: [
+        "Python",
+        "Fast API",
+        "PDF Plumber",
+        "React",
+        "TypeScript",
+        "MySQL",
+      ],
+      src: "projects/Structure_LO_Sync/",
+      githubLink: "",
     },
     {
       title: "DHCS",
