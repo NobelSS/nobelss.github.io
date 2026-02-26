@@ -71,12 +71,7 @@ export default function HomePage() {
                   Nobel Shan Setiono
                 </h1>
                 <p className="text-gray-500 text-lg mb-3">
-                  an undergraduate computer science student at BINUS University,
-                  passionate about artificial intelligence, software
-                  engineering, and data analytics. I enjoy the journey of
-                  continuous learning and growth in these fields, as well as
-                  utilizing my skills to solve problems and make a meaningful
-                  impact.
+                  Full-Stack AI Engineer specializing in Intelligent Systems and AI-driven automation. Proven track record of building production-grade architectures, ranging from Legal Tech document intelligence pipelines to agentic geospatial analytics engines. Experienced in delivering technical instruction across the full Computer Science curriculum at the university level. Passionate about leveraging LLMs and Agentic Workflows to solve complex enterprise problems.
                 </p>
               </div>
             </div>

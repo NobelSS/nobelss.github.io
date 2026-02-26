@@ -2,7 +2,6 @@ import Navbar from "../components/navbar";
 import { motion } from "framer-motion";
 import SocialIcons from "../components/social_icons";
 import ProjectCard from "../components/project_card";
-import { text } from "framer-motion/client";
 
 export default function ProjectPage() {
   const fadeIn = {
