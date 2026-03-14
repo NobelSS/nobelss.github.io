@@ -20,7 +20,7 @@ export default function ProjectPage() {
         "Gemini",
         "Python",
         "Fast API",
-        "React",
+        "NextJS",
         "TypeScript",
         "Leaflet",
         "PostgreSQL",
