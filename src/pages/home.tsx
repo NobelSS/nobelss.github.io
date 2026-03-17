@@ -13,9 +13,9 @@ export default function HomePage() {
       position: "Software Engineer Intern (AI / Full-Stack) - Moladin",
       period: "March 2025 - March 2026",
       description: `
-      Engineered a document intelligence pipeline that reduced manual processing time by ~70% and developed an automated report generation module for car appraisals. 
+      Responsible for the development of AI and full-stack features to optimize internal workflows and marketplace operations. Engineered a document intelligence pipeline and an automated report generation module that reduced manual processing time by ~70% and streamlined the creation of car condition appraisals for marketplace listings. 
       <br /><br />
-      I also built a property analysis engine using Vector Search and AI Agents to automate environmental risk research. Beyond that, I led R&D on AI agents and general agentic workflows to streamline system interactions and solve complex enterprise problems.`,
+      Led R&D initiatives to build agentic workflows, built a Database Agent alongside a property analysis engine powered by AI agents and regression models. Collaborated closely with international engineering teams and tech leads to deliver reliable, scalable AI-driven solutions.`,
     },
     {
       position: "Junior Laboratory Assistant - BINUS University",
