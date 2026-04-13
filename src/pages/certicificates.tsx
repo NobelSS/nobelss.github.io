@@ -10,6 +10,11 @@ export default function CertificatePage() {
 
   const certificates = [
     {
+      title: "EF SET English Certificate (C2 Proficient)",
+      description: `Achieved the highest level of English proficiency (C2 Proficient) on the EF Standard English Test. This certification verifies a mastery-level command of the language, equivalent to a native speaker, with the ability to communicate with precision and fluency in complex professional and academic settings.`,
+      image: "/certificates/Nobel_EFSET.jpg",
+    },
+    {
       title: "Cloud Technical Series: ADK Builder's Badge",
       description: `Participated in the Google Cloud Technical Series, gaining hands-on experience with Google Cloud Platform (GCP). Focused on cloud architecture best practices, infrastructure design, and building scalable cloud-native applications using modern development tools.`,
       image: "/certificates/Nobel_CloudTechnicalSeriesBadge.png",
